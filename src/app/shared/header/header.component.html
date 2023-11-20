@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg bg-primary shadow">
+  <div class="container">
+    <a class="navbar-brand text-light fw-bold" routerLink="/">MVP</a>
+    <button
+      mat-mini-fab
+      class="navbar-toggler"
+      color="primary"
+      (click)="onToggleMenu()"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-end"
+      [class.collapse]="collapsed"
+      (window:resize)="collapsed = true"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active text-light"
+            aria-current="page"
+            routerLink="/"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/items">Items</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
