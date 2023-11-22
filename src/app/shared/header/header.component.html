@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-primary shadow">
+<nav class="navbar navbar-expand-lg shadow">
   <div class="container">
     <a class="navbar-brand text-light fw-bold" routerLink="/">MVP</a>
     <button
@@ -26,6 +26,15 @@
         <li class="nav-item">
           <a class="nav-link text-light" routerLink="/items">Items</a>
         </li>
+
+        <div>
+          <button mat-raised-button>
+            <mat-icon>shopping_cart</mat-icon>
+          </button>
+          <button mat-raised-button color="accent">
+            <mat-icon>favorite</mat-icon>
+          </button>
+        </div>
       </ul>
     </div>
   </div>
