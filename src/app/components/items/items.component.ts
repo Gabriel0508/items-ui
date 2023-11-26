@@ -14,8 +14,6 @@ export class ItemsComponent implements OnInit {
   products$: Observable<IProduct[]> | undefined;
   isLoading$: Observable<boolean> | undefined;
 
-  displayedColumns: string[] = ['Id', 'Name', 'Description', 'Price', 'Brand'];
-
   constructor(private readonly store: Store) {}
 
   ngOnInit(): void {
@@ -31,6 +29,14 @@ export class ItemsComponent implements OnInit {
     //     },
     //   })
    // );
+  }
+
+  onFavoriteProductAdd(id:number): void {
+    console.log(id);
+  }
+
+  onCartProductAdd(id: number): void {
+    console.log(id);
   }
 
   private initDispatch(): void {

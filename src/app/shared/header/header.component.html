@@ -14,7 +14,10 @@
       [class.collapse]="collapsed"
       (window:resize)="collapsed = true"
     >
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul
+        class="navbar-nav d-flex justify-content-between"
+        @fade
+      >
         <li class="nav-item">
           <a
             class="nav-link active text-light"
@@ -27,11 +30,25 @@
           <a class="nav-link text-light" routerLink="/items">Items</a>
         </li>
 
-        <div>
-          <button mat-raised-button>
+        <div class="py-1">
+          <button
+            mat-mini-fab
+            color="basic"
+            class="me-2"
+            matBadge="15"
+            matBadgeColor="primary"
+            matBadgePosition="after"
+          >
             <mat-icon>shopping_cart</mat-icon>
           </button>
-          <button mat-raised-button color="accent">
+          <button
+            mat-mini-fab
+            color="accent"
+            class="ms-1"
+            matBadge="1"
+            matBadgeColor="primary"
+            matBadgePosition="after"
+          >
             <mat-icon>favorite</mat-icon>
           </button>
         </div>
