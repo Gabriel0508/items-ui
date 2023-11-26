@@ -15,6 +15,7 @@ import { ProductStoreModule } from './state/product/product-state.module';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [AppComponent, LandingPageComponent, ItemsComponent],
@@ -27,6 +28,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatTableModule,
     MatCardModule,
     MatIconModule,
+    MatBadgeModule,
     StoreModule.forRoot(),
     EffectsModule.forRoot(),
     ProductStoreModule,
