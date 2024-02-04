@@ -8,7 +8,7 @@ describe('HeaderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HeaderComponent]
+      declarations: [HeaderComponent],
     });
     fixture = TestBed.createComponent(HeaderComponent);
     component = fixture.componentInstance;
@@ -17,5 +17,19 @@ describe('HeaderComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should initialize collapsed to true', () => {
+    expect(component.collapsed).toBe(true);
+  });
+
+  it('should toggle collapsed value when onCollapsedNav is called', () => {
+    const initialCollapsedValue = component.collapsed;
+
+    // Call the method
+    component.onCollapsedNav();
+
+    // Expect the value to be toggled
+    expect(component.collapsed).toBe(!initialCollapsedValue);
   });
 });
