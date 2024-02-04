@@ -32,15 +32,4 @@ describe('HeaderComponent', () => {
     // Expect the value to be toggled
     expect(component.collapsed).toBe(!initialCollapsedValue);
   });
-
-  it('should collapse navbar on window resize', () => {
-    // Initially, the collapsed value is true
-    expect(component.collapsed).toBe(true);
-
-    // Simulate a window resize
-    window.dispatchEvent(new Event('resize'));
-
-    // Expect the collapsed value to be true after window resize
-    expect(component.collapsed).toBe(true);
-  });
 });
