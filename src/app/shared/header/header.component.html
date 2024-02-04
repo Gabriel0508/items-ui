@@ -1,1 +1,18 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow px-2">
+  <a class="navbar-brand" routerLink="/">INOVA</a>
+  <button class="navbar-toggler" type="button" (click)="onCollapsedNav()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    class="collapse navbar-collapse"
+    [class.collapse]="collapsed"
+  >
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLinkActive="active" routerLink="/items"
+          >Items</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
