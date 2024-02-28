@@ -4,6 +4,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { ItemsComponent } from './items/items.component';
 import { ItemsDetailsComponent } from './items-details/items-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +16,8 @@ import { ItemsDetailsComponent } from './items-details/items-details.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   exports: [LandingPageComponent, ItemsComponent, ItemsDetailsComponent]
 })

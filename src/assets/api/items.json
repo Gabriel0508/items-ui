@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Adidas",
+        "description": "high level",
+        "price": "5.5"
+    },
+    {
+        "id": "2",
+        "name": "Puma",
+        "description": "lorem10",
+        "price": "5"
+    },
+    {
+        "id": "3",
+        "name": "Nike",
+        "description": "lorem100",
+        "price": "10"
+    },
+    {
+        "id": "4",
+        "name": "G.G",
+        "description": "lorem34",
+        "price": "6"
+    },
+    {
+        "id": "5",
+        "name": "Sketchers",
+        "description": "lorem79",
+        "price": "8"
+    },
+    {
+        "id": "6",
+        "name": "Billa",
+        "description": "lorem1000",
+        "price": "9"
+    }
+]
