@@ -1,37 +1,37 @@
 [
     {
         "id": "1",
-        "name": "Adidas",
+        "name": "Web Development",
         "description": "high level",
         "price": "5.5"
     },
     {
         "id": "2",
-        "name": "Puma",
+        "name": "Automation Testing",
         "description": "lorem10",
         "price": "5"
     },
     {
         "id": "3",
-        "name": "Nike",
+        "name": "Java",
         "description": "lorem100",
         "price": "10"
     },
     {
         "id": "4",
-        "name": "G.G",
+        "name": "RxJs",
         "description": "lorem34",
         "price": "6"
     },
     {
         "id": "5",
-        "name": "Sketchers",
+        "name": "JavaScript",
         "description": "lorem79",
         "price": "8"
     },
     {
         "id": "6",
-        "name": "Billa",
+        "name": "Spring",
         "description": "lorem1000",
         "price": "9"
     }
