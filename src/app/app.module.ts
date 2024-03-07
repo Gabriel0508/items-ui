@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { ItemStoreModule } from './state/item/item-store.module';
-import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 
 
 @NgModule({
@@ -18,8 +17,7 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
     AppRoutingModule,
     StoreModule.forRoot(),
     EffectsModule.forRoot(),
-    ItemStoreModule,
-    NgxBootstrapIconsModule.pick(allIcons)
+    ItemStoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
